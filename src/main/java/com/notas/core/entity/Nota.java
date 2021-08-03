@@ -1,5 +1,7 @@
 package com.notas.core.entity;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,7 +11,7 @@ import javax.persistence.Table;
 
 @Table(name = "Nota")
 @Entity
-public class Nota {
+public class Nota implements Serializable{
 	
 	public Nota() {
 		
